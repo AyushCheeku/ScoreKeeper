@@ -73,7 +73,9 @@
 
                 
                 ballWiseRes.unshift(<span>{`${hit},${inputRef.current.value}`}</span>);
-                console.log(inputRef.current.value);
+
+                hit=0;
+                inputRef.current.value="";
 
                 RootElement.render(<App/>)
             }
